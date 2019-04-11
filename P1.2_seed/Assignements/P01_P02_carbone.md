@@ -1,0 +1,1 @@
+[P01 P02 parallel pi using MPI and OpenMP](../lectures/ParallelProgramming/exercises/parallel_pi/parallel_pi.md)

@@ -1,0 +1,1 @@
+[P03 allgather matrix matrix multiplication](../lectures/ParallelProgramming/exercises/allgather_multiplication/allgather_multiplication.md)

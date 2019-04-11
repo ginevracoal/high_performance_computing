@@ -1,0 +1,31 @@
+No multi-threaded MPI detected (Hybrid may or may not work)
+
+The time/date of the run...  at Wed Feb 14 14:50:26 2018
+
+This driver was compiled with:
+	-DITER=4 -DLINUX -DNOACCUR -DPREC=double 
+Malloc done.  Used 1846080096 bytes
+(0 of 24): NN lda=15000 ldb= 192 ldc=15000 0 0 0 23029.313 b22
+(1 of 24): NN lda=15000 ldb= 192 ldc=15000 0 0 0 23018.520 b22
+(2 of 24): NN lda=15000 ldb= 192 ldc=15000 0 0 0 23030.189 b22
+(3 of 24): NN lda=15000 ldb= 192 ldc=15000 0 0 0 23009.561 b22
+(4 of 24): NN lda=15000 ldb= 192 ldc=15000 0 0 0 23008.764 b22
+(5 of 24): NN lda=15000 ldb= 192 ldc=15000 0 0 0 23017.965 b22
+(6 of 24): NN lda=15000 ldb= 192 ldc=15000 0 0 0 23016.139 b22
+(7 of 24): NN lda=15000 ldb= 192 ldc=15000 0 0 0 23014.458 b22
+(8 of 24): NN lda=15000 ldb= 192 ldc=15000 0 0 0 23020.953 b22
+(9 of 24): NN lda=15000 ldb= 192 ldc=15000 0 0 0 23008.856 b22
+(10 of 24): NN lda=15000 ldb= 192 ldc=15000 0 0 0 23002.089 b22
+(11 of 24): NN lda=15000 ldb= 192 ldc=15000 0 0 0 23014.282 b22
+(12 of 24): NN lda=15000 ldb= 192 ldc=15000 0 0 0 23030.674 b23
+(13 of 24): NN lda=15000 ldb= 192 ldc=15000 0 0 0 23008.074 b23
+(14 of 24): NN lda=15000 ldb= 192 ldc=15000 0 0 0 23020.855 b23
+(15 of 24): NN lda=15000 ldb= 192 ldc=15000 0 0 0 22999.401 b23
+(16 of 24): NN lda=15000 ldb= 192 ldc=15000 0 0 0 23019.759 b23
+(17 of 24): NN lda=15000 ldb= 192 ldc=15000 0 0 0 23022.310 b23
+(18 of 24): NN lda=15000 ldb= 192 ldc=15000 0 0 0 23027.629 b23
+(19 of 24): NN lda=15000 ldb= 192 ldc=15000 0 0 0 23029.051 b23
+(20 of 24): NN lda=15000 ldb= 192 ldc=15000 0 0 0 22996.680 b23
+(21 of 24): NN lda=15000 ldb= 192 ldc=15000 0 0 0 23006.432 b23
+(22 of 24): NN lda=15000 ldb= 192 ldc=15000 0 0 0 23024.311 b23
+(23 of 24): NN lda=15000 ldb= 192 ldc=15000 0 0 0 23004.737 b23

@@ -1,0 +1,10 @@
+ Matrix transpose executed. Time Elapsed    1.6817 secs
+ Matrix transpose executed. Time Elapsed    1.7023 secs
+ Matrix transpose executed. Time Elapsed    1.6460 secs
+ Matrix transpose executed. Time Elapsed    1.6920 secs
+ Matrix transpose executed. Time Elapsed    1.7012 secs
+ Matrix transpose executed. Time Elapsed    1.6807 secs
+ Matrix transpose executed. Time Elapsed    1.7000 secs
+ Matrix transpose executed. Time Elapsed    1.6423 secs
+ Matrix transpose executed. Time Elapsed    1.6669 secs
+ Matrix transpose executed. Time Elapsed    1.6492 secs

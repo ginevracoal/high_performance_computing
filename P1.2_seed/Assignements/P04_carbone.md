@@ -1,0 +1,1 @@
+[P04 naive CUDA matrix transpose](../lectures/ParallelProgramming/exercises/cuda/naive_matrix_transpose.md)

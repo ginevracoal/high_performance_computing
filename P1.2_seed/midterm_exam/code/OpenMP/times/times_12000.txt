@@ -1,0 +1,5 @@
+n. of threads / parallel execution time
+ 
+1    10.775648
+5    2.574920
+10    1.425497

@@ -1,0 +1,7 @@
+n. of threads / avg. ex. time 
+" 1  cores"		0.146706
+" 5  cores"		0.048347
+" 10  cores"		0.023779
+"CUDA"		0.011918
+"CUDA v.2"		0.011369
+"CUDA v.3"		0.007113

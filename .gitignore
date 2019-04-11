@@ -1,0 +1,4 @@
+*.Rproj
+/my_exercises/HPL_install/*
+*.x
+*.dat
