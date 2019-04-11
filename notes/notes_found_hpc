@@ -1,0 +1,141 @@
+access to Ulysses
+
+ssh ginevracoal@frontend2.hpc.sissa.it
+
+password: 4MYE0ir8
+
+_______________________________________________________
+
+OTTIMIZZAZIONE NEI LOOP
+
+argc è il numero di argomenti digitati
+argv è un array di stringhe contenente ogni argomento
+
+argv[0] è il nome del programma
+argv[1]=argv + 1 
+
+atoi() converte una stringa ad un intero
+
+*(argv + 1) è la stringa contenuta in argv[1] 
+
+Np = atoi( *(argv + 1) )  inizializza Np con l'intero che ho dato in input
+
+c'è un errore: dovrebbe essere Np * 3
+
+calloc(numero di elementi, dimensione di ogni elemento) restituisce un puntatore a void, quindi faccio il cast a double
+
+(double*) operatore di casting 
+
+x = (double*)calloc(Np * 3, sizeof(double))		x è il puntatore calloc ad un array di double 
+
+puntatore x - Np celle dell'array - puntatore y - etc
+
+enum è una keyword descrittiva
+typedef altra keyword
+
+a register is a hint to the compiler that the variable will be heavily used and that you recommend it be kept in a processor register if possible.
+
+
+_______________________________________________________
+
+13/10/17
+
+Debugging simple codes with the help of a debugger
+Remember:
+compile with -g 
+debugging infos are stored into the *.o file
+
+
+go in the folder Basic_debugging
+
+make 	  compile all the examples in the folder
+makefile 		esegue il file che scelgo
+ll
+
+ex01.f / ex01.f90 / ex01.c. - Task: run the program under the control of a debugger, set/delete break points, watches, inspect data.
+
+INTERACTIVE DEBUGGING
+
+setto i break point e analizzo le variabili
+
+gdb ex01-f90 		to begin debugging the program
+
+Now we are in (gdb)
+
+GDB COMMANDS
+
+- c or continue: Debugger will continue executing until the next break point
+- n or next: Debugger will execute the next line as single instruction
+- s or step: Same as next, but does not treats function as a single instruction, instead goes into the function and executes it line by line
+- list: to see all the lines in the file
+- break 11: create a new break in line 11
+- info break: gives you informations about the breaks you created
+- quit or CTRL+D: to exit from gbd
+- backtrace: produces a stack trace of the function calls that
+lead to a seg fault (should remind you of Java exceptions)
+- where: same as backtrace, you can think of this version as
+working even when you’re still in the middle of the program
+- finish: runs until the current function is finished
+- delete: deletes a specified breakpoint
+- info break: shows information about all declared breakpoints
+
+
+
+POST MORTEM DEBUGGING
+
+A core file is an image of a process that has crashed It contains all process information pertinent to debugging: contents of hardware registers, process status, and process data. Gdb will allow you use this file to determine where your program crashed. 
+
+./ex02-f90 		gives a segmentation fault
+
+The program must have crashed and left a core file. It should tell you if it has left a core file with the message "core dumped". 
+
+ulimit -a 		mi fa vedere i limiti imposti dal sistema
+
+ulimit -c unlimited			rende la dimensione del core unlimited
+
+gdb ex02-f90 core		gdb stars looking at the core file produced by the program. Gdb will then load the program's debugging information and examine the core file to determine the cause of the crash. Gdb prints the last statement that was attempted which likely caused the crash. 
+
+bt		backtrace serve a ricostruire la gerarchia delle funzioni nel punto corrente
+
+Now we have to solve the bug, so we go back to the interactive mode
+
+gdb ex02-f90 		no core this time
+run
+bt
+print i
+
+invio 		esegue il comando precedente
+
+break 12 if j=1000
+p i 		print i
+p j
+s		step
+
+
+DEBUG ditribute_v0 WITH GDB
+
+gcc -g distribute_v0.c -lm
+gdb a.out
+Now I'm in (gdb)
+list (x5)
+break 210
+
+
+
+
+SECOND PART
+
+x/16db (char*) x-16		 interpret x like a pointer to byte and go back by 16 bytes
+
+the memory needed to store the header is machine dependent
+
+malloc doesn't guarantee you to have contiguous memory, calloc does it and initializes memory at 0
+
+I have a stream of data and an if condition inside a loop (which should always be avoided). How to optimize it: 
+If I sort the data the execution time drops because the pattern of branch is more predictable. 
+Try to perform the same operation avoiding the if condition.
+
+perf is a system utility which gives informations on performance
+
+the order in which I choose the instructions inside if-else depends on the statistics. The content of the else always requires less time, because it is a straight operation (no jump). So we always have to write the most frequent instruction inside the else condition.
+
