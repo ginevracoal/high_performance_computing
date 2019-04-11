@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1508933989884.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "853637806",
+    "id" : "87538D0A",
+    "lastKnownWriteTime" : 1509008459,
+    "last_content_update" : 1509008459213,
+    "path" : "~/Dropbox/DSSC/foundations_hpc/my_exercises/HPC_graphs/HPC_graphs.R",
+    "project_path" : "HPC_graphs.R",
+    "properties" : {
+        "cursorPosition" : "2,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
